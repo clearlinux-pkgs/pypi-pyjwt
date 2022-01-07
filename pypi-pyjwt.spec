@@ -17,13 +17,13 @@ BuildRequires : buildreq-distutils3
 Provides: PyJWT
 Provides: PyJWT-python
 Provides: PyJWT-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py
 BuildRequires : py-python
 BuildRequires : pytest
 BuildRequires : pytest-runner
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 =====
