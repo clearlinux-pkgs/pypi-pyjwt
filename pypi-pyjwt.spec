@@ -4,7 +4,7 @@
 #
 Name     : pypi-pyjwt
 Version  : 2.3.0
-Release  : 64
+Release  : 65
 URL      : https://files.pythonhosted.org/packages/1d/8e/01bdcfdbb352daaba8ea406d9df149c5bba7dbf70f908d4fa4c269fe6a08/PyJWT-2.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1d/8e/01bdcfdbb352daaba8ea406d9df149c5bba7dbf70f908d4fa4c269fe6a08/PyJWT-2.3.0.tar.gz
 Summary  : JSON Web Token implementation in Python
@@ -14,16 +14,13 @@ Requires: pypi-pyjwt-license = %{version}-%{release}
 Requires: pypi-pyjwt-python = %{version}-%{release}
 Requires: pypi-pyjwt-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: PyJWT
-Provides: PyJWT-python
-Provides: PyJWT-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py
-BuildRequires : py-python
-BuildRequires : pytest
-BuildRequires : pytest-runner
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi(py)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-py
+BuildRequires : pypi-pytest
+BuildRequires : pypi-pytest_runner
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 =====
@@ -64,7 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641476116
+export SOURCE_DATE_EPOCH=1642466478
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
