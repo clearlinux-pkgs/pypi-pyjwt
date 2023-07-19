@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-pyjwt
-Version  : 2.7.0
-Release  : 77
-URL      : https://files.pythonhosted.org/packages/e0/f0/9804c72e9a314360c135f42c434eb42eaabb5e7ebad760cbd8fc7023be38/PyJWT-2.7.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e0/f0/9804c72e9a314360c135f42c434eb42eaabb5e7ebad760cbd8fc7023be38/PyJWT-2.7.0.tar.gz
+Version  : 2.8.0
+Release  : 78
+URL      : https://files.pythonhosted.org/packages/30/72/8259b2bccfe4673330cea843ab23f86858a419d8f1493f66d413a76c7e3b/PyJWT-2.8.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/30/72/8259b2bccfe4673330cea843ab23f86858a419d8f1493f66d413a76c7e3b/PyJWT-2.8.0.tar.gz
 Summary  : JSON Web Token implementation in Python
 Group    : Development/Tools
 License  : MIT
@@ -28,7 +28,10 @@ BuildRequires : pypi-virtualenv
 %define debug_package %{nil}
 
 %description
+PyJWT
 =====
+.. image:: https://github.com/jpadilla/pyjwt/workflows/CI/badge.svg
+:target: https://github.com/jpadilla/pyjwt/actions?query=workflow%3ACI
 
 %package license
 Summary: license components for the pypi-pyjwt package.
@@ -58,10 +61,10 @@ python3 components for the pypi-pyjwt package.
 
 
 %prep
-%setup -q -n PyJWT-2.7.0
-cd %{_builddir}/PyJWT-2.7.0
+%setup -q -n PyJWT-2.8.0
+cd %{_builddir}/PyJWT-2.8.0
 pushd ..
-cp -a PyJWT-2.7.0 buildavx2
+cp -a PyJWT-2.8.0 buildavx2
 popd
 
 %build
@@ -69,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683729985
+export SOURCE_DATE_EPOCH=1689782751
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
