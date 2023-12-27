@@ -5,7 +5,7 @@
 #
 Name     : pypi-pyjwt
 Version  : 2.8.0
-Release  : 79
+Release  : 80
 URL      : https://files.pythonhosted.org/packages/30/72/8259b2bccfe4673330cea843ab23f86858a419d8f1493f66d413a76c7e3b/PyJWT-2.8.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/30/72/8259b2bccfe4673330cea843ab23f86858a419d8f1493f66d413a76c7e3b/PyJWT-2.8.0.tar.gz
 Summary  : JSON Web Token implementation in Python
