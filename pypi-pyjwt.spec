@@ -6,10 +6,10 @@
 # autospec commit: 5424026
 #
 Name     : pypi-pyjwt
-Version  : 2.10.0
-Release  : 84
-URL      : https://files.pythonhosted.org/packages/b5/05/324952ded002de746f87b21066b9373080bb5058f64cf01c4d62784b8186/pyjwt-2.10.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/b5/05/324952ded002de746f87b21066b9373080bb5058f64cf01c4d62784b8186/pyjwt-2.10.0.tar.gz
+Version  : 2.10.1
+Release  : 85
+URL      : https://files.pythonhosted.org/packages/e7/46/bd74733ff231675599650d3e47f361794b22ef3e3770998dda30d3b63726/pyjwt-2.10.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e7/46/bd74733ff231675599650d3e47f361794b22ef3e3770998dda30d3b63726/pyjwt-2.10.1.tar.gz
 Summary  : JSON Web Token implementation in Python
 Group    : Development/Tools
 License  : MIT
@@ -63,10 +63,10 @@ python3 components for the pypi-pyjwt package.
 
 
 %prep
-%setup -q -n pyjwt-2.10.0
-cd %{_builddir}/pyjwt-2.10.0
+%setup -q -n pyjwt-2.10.1
+cd %{_builddir}/pyjwt-2.10.1
 pushd ..
-cp -a pyjwt-2.10.0 buildavx2
+cp -a pyjwt-2.10.1 buildavx2
 popd
 
 %build
@@ -74,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1731944820
+export SOURCE_DATE_EPOCH=1733828949
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "

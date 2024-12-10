@@ -1,5 +1,5 @@
 PKG_NAME := pypi-pyjwt
-URL = https://files.pythonhosted.org/packages/b5/05/324952ded002de746f87b21066b9373080bb5058f64cf01c4d62784b8186/pyjwt-2.10.0.tar.gz
+URL = https://files.pythonhosted.org/packages/e7/46/bd74733ff231675599650d3e47f361794b22ef3e3770998dda30d3b63726/pyjwt-2.10.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
